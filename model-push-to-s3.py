@@ -22,7 +22,7 @@ def compress_model(model_path):
         else:
             print(f"Warning: {CONFIG_FILE_NAME} not found in {model_path}")
     return archive_path
-def push_model_to_s3(model_path, bucket_name='sagemaker-ap-south-1-590184109458'):
+def push_model_to_s3(model_path, bucket_name='bucket-name'):
     """
     Compress the model directory and push the resulting tarball to the specified S3 bucket.
     Returns the S3 URI of the uploaded model.
@@ -34,7 +34,7 @@ def push_model_to_s3(model_path, bucket_name='sagemaker-ap-south-1-590184109458'
     model_uri = f"s3://{bucket_name}/{key}"
     return model_uri
 if __name__ == "__main__":
-    model_path = "/Users/akhileshkumar/Library/Application Support/tts/tts_models--en--ljspeech--glow-tts"
-    bucket_name = "sagemaker-ap-south-1-590184109458"
+    model_path = "your-model-path"
+    bucket_name = "bucket-name"
     model_uri = push_model_to_s3(model_path, bucket_name)
     print("Model pushed to S3:", model_uri)
