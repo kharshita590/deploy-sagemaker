@@ -26,3 +26,19 @@ Make sure you have installed:
 ```bash
 git clone https://github.com/kharshita590/RAG-FLINK-KAFKA
 cd rag
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate   # On Mac/Linux
+venv\Scripts\activate      # On Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run Flink job
+python -m flink_job.py
+
+# Start FastAPI server
+uvicorn app:app --reload
+
