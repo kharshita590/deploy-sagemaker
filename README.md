@@ -1,15 +1,28 @@
+# 🚀 RAG-FLINK-KAFKA
 
-## Scripts Overview
+A **Real-time RAG-powered Financial Chatbot** built with **Apache Flink + Kafka + FastAPI + Next.js** ⚡  
+It streams user queries in real-time, retrieves relevant financial data, and generates **AI-powered insights**.  
 
-- **DEPLOY.PY**  
-  *Description*: Deploys the model to AWS SageMaker.
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)  
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green?logo=fastapi)  
+![Next.js](https://img.shields.io/badge/Next.js-13-black?logo=next.js)  
+![Apache Flink](https://img.shields.io/badge/Flink-Kafka-orange?logo=apacheflink)  
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-- **SAGEMAKER-INFERENCE.PY**  
-  *Description*: Provides SageMaker with the code that demonstrates model behavior, including how the model processes input, produces output, and performs prediction.
+---
 
-- **MODEL-PUSH-TO-S3**  
-  *Description*: Contains code to push the model artifact to Amazon S3 for storage and further use.
+## 📋 Prerequisites
+Make sure you have installed:
+- 🐍 **Python 3.11 or lower (<= 3.11)**  
+- 🟢 **Node.js + npm**  
+- 🌱 **Git**  
+- ⚡ **Kafka + Flink (running locally or on Docker)**  
 
-- **RUN-API.PY**  
-  *Description*: Includes code to send requests to the deployed endpoint, enabling API-based interactions with the model.
+---
 
+## 🔧 Installation & Setup  
+
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/kharshita590/RAG-FLINK-KAFKA
+cd rag
